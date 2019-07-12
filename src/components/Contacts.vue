@@ -80,7 +80,7 @@
     </v-navigation-drawer>
     <v-toolbar
       :clipped-left="$vuetify.breakpoint.lgAndUp"
-      color="blue darken-3"
+      color="red darken-8"
       dark
       app
       fixed
@@ -97,7 +97,7 @@
 
 
 
-        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+
       </v-toolbar-title>
       <v-text-field
         flat
@@ -227,7 +227,8 @@
               <v-text-field
                 v-model="email"
                 prepend-icon="mail"
-                placeholder="Email"
+                placeholder="hypnotize@mai.ru"
+
               ></v-text-field>
             </v-flex>
             <v-flex xs6>
@@ -291,11 +292,9 @@ export default {
     site:'',
     dialog: false,
     edit: false,
-    drawer: null,
+    drawer: false,
     hireDate: "",
-    items: [
-      { icon: "contacts", text: "Сортировать по дате рождения" },
-    ],
+
     hireDates: []
   }),
 
